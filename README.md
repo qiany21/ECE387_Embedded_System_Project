@@ -1,1 +1,1 @@
-# ECE387_Embedded_System_Project
+# ECE387_Midterm_Project
