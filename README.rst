@@ -77,7 +77,7 @@ Library Overview
 
 i2chw
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This I2C library is implemented as a compact assembler software implementation of the I2C protocol which runs on any AVR (i2cmaster.S) and as a TWI hardware interface for all AVR with built-in TWI hardware (twimaster.c). TWI is the name used by Atmel but is the same as I2C.
+This I2C library is implemented as a compact assembler software implementation of the I2C protocol which runs on any AVR (i2cmaster.S) and as a TWI hardware interface for all AVR with built-in TWI hardware (twimaster.c). TWI is the name used by Atmel but is the same as I2C. If you cannot understand what twimaster.c does, you can check any AVR chip's datasheet for its TWI module.
 
 | Important:
 |
