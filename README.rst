@@ -79,8 +79,8 @@ i2chw
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This I2C library is implemented as a compact assembler software implementation of the I2C protocol which runs on any AVR (i2cmaster.S) and as a TWI hardware interface for all AVR with built-in TWI hardware (twimaster.c). TWI is the name used by Atmel but is the same as I2C.
 
-Important:
-To make your program work with this I2C LCD library. You should know the microprocessor on your Arduino. For example, this library has been modified to work on Atmega328P. The F_CPU in twimaster.c has been changed to 16MHz in order to make it work. Please adjust this parameter in case of using other microprocessors.
+| Important:
+| To make your program work with this I2C LCD library. You should know the microprocessor on your Arduino. For example, this library has been modified to work on Atmega328P. The F_CPU in twimaster.c has been changed to 16MHz in order to make it work. Please adjust this parameter in case of using other microprocessors.
 
 Another important parameter is SCL_CLOCK, adjust this to change the speed of displaying characters.
 
@@ -88,8 +88,8 @@ pcf8574
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This PCF8574 library is implemented as a helper library to set the status of those pins that are connected to the LCD. Meanwhile, it will be used to initialize the I2C communication. This is the library that will be used in library lcdpcf8574.
 
-Important:
-if you have PCF8574T and HD44780 separated and you solder them together by yourself, it is most likely you can set the address of the device. In this case, change PCF8574_ADDRBASE in pcf8574.h to match the address you set.
+| Important:
+| if you have PCF8574T and HD44780 separated and you solder them together by yourself, it is most likely you can set the address of the device. In this case, change PCF8574_ADDRBASE in pcf8574.h to match the address you set.
 
 
 lcdpcf8574
