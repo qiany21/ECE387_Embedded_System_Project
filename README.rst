@@ -99,7 +99,7 @@ This PCF8574 library is implemented as a helper library to set the status of tho
 lcdpcf8574
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This LCD library includes some functions to control and write to the LCD. Two additional methods that help users program the LCD have been added.
-1. void lcd_clear(int line)
+|1. void lcd_clear(int line)
 | This method clears a given line. There was only one method to clear the whole screen, and that is not helpful.
 
 2. void lcd_puti(int i)
