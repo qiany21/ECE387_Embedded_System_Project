@@ -44,7 +44,7 @@ An I2C LCD is a LCD display screen with I2C interface. It can be used to display
 HD44780 LCD
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The HD44780 LCD is a dot-matrix liquid crystal display controller driving 2 lines by 16 characters or 4 lines by 20 characters. (With expansion chip, it can go up to 80 characters). The following are the pins of HD44780 LCD that can be found at the topn of the LCD in the following picture. (Refer to https://wiki2.org/en/Hitachi_HD44780_LCD_controller
+The HD44780 LCD is a dot-matrix liquid crystal display controller driving 2 lines by 16 characters or 4 lines by 20 characters. (With expansion chip, it can go up to 80 characters). The following are the pins of HD44780 LCD that can be found at the topn of the LCD in the following picture. (Refer to https://wiki2.org/en/Hitachi_HD44780_LCD_controller)
 
 - Ground
 - VCC +3.3 to +5V (typical)
@@ -65,6 +65,9 @@ The HD44780 LCD is a dot-matrix liquid crystal display controller driving 2 line
 
 .. image:: https://github.com/qiany21/ECE387_Midterm_Project/blob/main/lcd_20_04.jpg
 
+PCF8574T Port Expander
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. image:: https://github.com/qiany21/ECE387_Midterm_Project/blob/main/pcf8574t.jpg
 
 
