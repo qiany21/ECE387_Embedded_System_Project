@@ -10,7 +10,7 @@ Please refer to LICENSE file for licensing information.
 
 #ifndef PCF8574_H_
 #define PCF8574_H_
-// this was 0x20 which is not correct
+// this was 0x20 which is not correct, our is A0=1 A1=1 A2=1 => 0x27
 #define PCF8574_ADDRBASE (0x27) //device base address
 
 #define PCF8574_I2CINIT 1 //init i2c
