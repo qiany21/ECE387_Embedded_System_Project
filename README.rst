@@ -44,6 +44,8 @@ An I2C LCD is a LCD display screen with I2C interface. It can be used to display
 HD44780 LCD
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. image:: https://github.com/qiany21/ECE387_Midterm_Project/blob/main/lcd_20_04.jpg
+
 
 
 
