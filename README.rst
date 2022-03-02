@@ -37,12 +37,12 @@ Hardware Overview
 -----------------
 
 What is an I2C LCD?
-~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 An I2C LCD is a LCD display screen with I2C interface. It can be used to display a range of sizes. There are usually two typical sizes: 16x02 and 20x04(16 characters on 2 lines or 20 characters on 4 lines). The reason we need such a LCD with I2C is a normal LCD would need over 10 wires to connect to an Arduino while an I2C LCD would only use 4 wires to connect to an Arduino. 2 data pins are used to control the LCD. Addding an I2C interface reduces complexity and difficulty. In addition, more port resources are saved. An I2C LCD is maade up with a PCF8574T port expander and a HD44780 LCD. We will have a brief review of these two components.
 
 HD44780 LCD
-~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
