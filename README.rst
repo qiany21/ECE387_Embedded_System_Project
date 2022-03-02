@@ -4,7 +4,7 @@
 :Course: ECE387
 :Project: Midterm Project
 
-This library provides a set of functions for interfacing the I2C LCD with ATmega 328P and a sample program for guiding you to start using it. Note the original authors of this library is Davide Gironi(Enable I2C on LCD) and Peter Fleury(LCD Driver). The library has almost all the functions that we normally use except for clear a specific line and print integer on the LCD. I have added those two functions into the library so that we can use it like what we did in our LCD lab.
+This library provides a set of functions for interfacing the I2C LCD with ATmega 328P and a sample program for guiding you to start using it. Note the original authors of this library is Davide Gironi(Enable I2C on LCD) and Peter Fleury(LCD Driver and TWI/I2C). The library has almost all the functions that we normally use except for clear a specific line and print integer on the LCD. I have added those two functions into the library so that we can use it like what we did in our LCD lab.
 
 
 Installation
@@ -44,7 +44,7 @@ An I2C LCD is a LCD display screen with I2C interface. It can be used to display
 HD44780 LCD
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The HD44780 LCD is a dot-matrix liquid crystal display controller driving 2 lines by 16 characters or 4 lines by 20 characters. (With expansion chip, it can go up to 80 characters). The following are the pins of HD44780 LCD that can be found at the topn of the LCD in the following picture. (Refer to https://wiki2.org/en/Hitachi_HD44780_LCD_controller)
+The HD44780 LCD is a dot-matrix liquid crystal display controller driving 2 lines by 16 characters or 4 lines by 20 characters. (With expansion chip, it can go up to 80 characters). The following is a list of pins of HD44780 LCD that can be found at the topn of the LCD in the following picture. (Refer to https://wiki2.org/en/Hitachi_HD44780_LCD_controller)
 
 - Ground
 - VCC +3.3 to +5V (typical)
@@ -77,6 +77,11 @@ Library Overview
 
 i2chw
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This I2C library is implemented as a compact assembler software implementation of the I2C protocol which runs on any AVR (i2cmaster.S) and as a TWI hardware interface for all AVR with built-in TWI hardware (twimaster.c). TWI is the name used by Atmel but is the same as I2C.
+
+To make your program work with this I2C LCD library. You should know the microprocessor on your Arduino. For example, this library has been modified to work on Atmega328P. The F_CPU in twimaster.c has been changed to 16MHz in order to make it work. Please adjust this parameter in case of using other microprocessors.
+
+Another important parameter is SCL_CLOCK, adjust this to change the speed of displaying characters.
 
 pcf8574
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
