@@ -68,8 +68,23 @@ The HD44780 LCD is a dot-matrix liquid crystal display controller driving 2 line
 PCF8574T Port Expander
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The PCF8574 is an I2C bus to 8-bot parallel bus IO expander IC. The following board which is configured to be interfaced with 16×2 or 20×4 LCD Displays. The address pins are pulled HIGH(which simply means the address of the device is fixed to be 0x27. This is important!!!) and you do not have access to all the IO pins and the INT pin.
+The PCF8574 is an I2C bus to 8-bot parallel bus IO expander IC. The following board which is configured to be interfaced with 16×2 or 20×4 LCD Displays. The address pins are pulled HIGH(which simply means the address of the device is fixed to be 0x27. This is important!!!) and you do not have access to all the IO pins and the INT pin. The interface for this IC is I2C using SDA and SCL lines.
 
 .. image:: https://github.com/qiany21/ECE387_Midterm_Project/blob/main/pcf8574t.jpg
+
+Library Overview
+-----------------
+
+i2chw
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+pcf8574
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+lcdpcf8574
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+<br/>Note UART has nothing to do with the I2C LCD module, it is designed for debugging purpose.
+
 
 
