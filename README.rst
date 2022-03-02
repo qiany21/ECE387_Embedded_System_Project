@@ -31,9 +31,16 @@ Now you are all set! To compile the sample program(I borrowed the python script 
 
     python ./compile_script.py 4 com3
 
-where the number 4 indicates the level of compilation(there are a total of 4 levels) and com3 indicates the port used by Arduino. You are welcome to modify the script.
+where the number 4 indicates the level of compilation(there are a total of 4 levels) and com3 indicates the port used by Arduino(This can be different in your case, make sure you have the correct port number and change both the command line arguments and the setting in the script).
   
-Overview - What is an I2C LCD?
+Overview
 ------------------------------
+
+1. What is an I2C LCD?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 An I2C LCD is a LCD display screen with I2C interface. It can be used to display range of sizes. There are usually two typical sizes: 16x02 and 20x04.
+
+2. How is an I2C LCD different from LCD and Why is it needed?
+
 
