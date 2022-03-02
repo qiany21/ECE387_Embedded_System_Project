@@ -87,7 +87,7 @@ Another important parameter is SCL_CLOCK, adjust this to change the speed of dis
 
 pcf8574
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This PCF8574 library is implemented as a helper library to set the status of those pins that are connected to the LCD. Meanwhile, it will be used to initialize the I2C communication. This is the library that will be used in library lcdpcf8574.
+This PCF8574 library is implemented as a helper library to set the status of those pins that are connected to the LCD. Meanwhile, it will be used to initialize the I2C communication. I changed PCF8574_ADDRBASE to be 0x27 which corresponds to have A0, A1, A2 of PCF8574 set to high. This is the library that will be used in library lcdpcf8574. 
 
 | Important:
 |
