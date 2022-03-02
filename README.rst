@@ -82,7 +82,6 @@ i2chw
 This I2C library is implemented as a compact assembler software implementation of the I2C protocol which runs on any AVR (i2cmaster.S) and as a TWI hardware interface for all AVR with built-in TWI hardware (twimaster.c). TWI is the name used by Atmel but is the same as I2C. If you cannot understand what twimaster.c does, you can check any AVR chip's datasheet for its TWI module.
 
 | **Note:**
-|
 | To make your program work with this I2C LCD library. You should know the microprocessor on your Arduino. For example, this library has been modified to work on Atmega328P. The F_CPU in twimaster.c has been changed to 16MHz in order to make it work. Please adjust this parameter in case of using other microprocessors.
 
 Another important parameter is SCL_CLOCK, adjust this to change the speed of displaying characters.
@@ -92,7 +91,6 @@ pcf8574
 This PCF8574 library is implemented as a helper library to set the status of those pins that are connected to the LCD. Meanwhile, it will be used to initialize the I2C communication. I changed PCF8574_ADDRBASE to be 0x27 which corresponds to have A0, A1, A2 of PCF8574 set to high. This is the library that will be used in library lcdpcf8574. 
 
 | **Note:**
-|
 | If you have PCF8574T and HD44780 separated and you solder them together by yourself, it is most likely you can set the address of the device. In this case, change PCF8574_ADDRBASE in pcf8574.h to match the address you set.
 
 
@@ -105,7 +103,6 @@ This LCD library includes some functions to control and write to the LCD. Two ad
 - void lcd_puti(int i) : This method prints a given integer onto the LCD. There were methods to print char and string onto the LCD. This method helps when we want to print the loop control variable or something else that is an integer type.
 
 | **Note:**
-|
 | If you are using an LCD with diffrent size, please make changes to LCD_LINES, LCD_DISP_LENGTH, LCD_WRAP_LINES in lcdpcf8574.h so that those parameters match your LCD display.
 
 **Note:** UART has nothing to do with the I2C LCD module, it is designed for debugging purpose.
