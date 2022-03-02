@@ -84,7 +84,8 @@ pcf8574
 lcdpcf8574
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-<br/>Note UART has nothing to do with the I2C LCD module, it is designed for debugging purpose.
+
+Note UART has nothing to do with the I2C LCD module, it is designed for debugging purpose.
 
 
 
