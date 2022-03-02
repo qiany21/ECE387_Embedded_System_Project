@@ -46,7 +46,22 @@ HD44780 LCD
 
 .. image:: https://github.com/qiany21/ECE387_Midterm_Project/blob/main/lcd_20_04.jpg
 
-
+- Ground
+- VCC +3.3 to +5V (typical)
+- Contrast adjustment (VO) This is an analog input, typically connected to a potentiometer. The user must be able to control this voltage independent of all other adjustments, - in order to optimise visibility of the display that varies i.a. with temperature, and, in some cases height above the sea level. With a wrong adjustment the display will seem to malfunction.
+- Register Select (RS). RS=0: Command, RS=1: Data
+- Read/Write (R/W). R/W=0: Write, R/W=1: Read (In most applications reading from the HD44780 makes no sense. In that case this pin can be permanently connected to ground and no io pins need to be allocated to steer it.)
+- Clock (Enable). Falling edge triggered
+- Bit 0 (Not used in 4-bit operation)
+- Bit 1 (Not used in 4-bit operation)
+- Bit 2 (Not used in 4-bit operation)
+- Bit 3 (Not used in 4-bit operation)
+- Bit 4
+- Bit 5
+- Bit 6
+- Bit 7
+- Backlight Anode (+) (If applicable)
+- Backlight Cathode (-) (If applicable)
 
 
 
