@@ -93,12 +93,21 @@ This PCF8574 library is implemented as a helper library to set the status of tho
 
 | Important:
 |
-| if you have PCF8574T and HD44780 separated and you solder them together by yourself, it is most likely you can set the address of the device. In this case, change PCF8574_ADDRBASE in pcf8574.h to match the address you set.
+| If you have PCF8574T and HD44780 separated and you solder them together by yourself, it is most likely you can set the address of the device. In this case, change PCF8574_ADDRBASE in pcf8574.h to match the address you set.
 
 
 lcdpcf8574
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This LCD library includes some functions to control and write to the LCD. Two additional methods that help users program the LCD have been added.
+1. void lcd_clear(int line)
+| This method clears a given line. There was only one method to clear the whole screen, and that is not helpful.
 
+2. void lcd_puti(int i)
+| This method prints a given integer onto the LCD. There were methods to print char and string onto the LCD. This method helps when we want to print the loop control variable or something else that is an integer type.
+
+| Important:
+|
+| If you are using an LCD with diffrent size, please make changes to LCD_LINES, LCD_DISP_LENGTH, LCD_WRAP_LINES in lcdpcf8574.h so that those parameters match your LCD display.
 
 Note UART has nothing to do with the I2C LCD module, it is designed for debugging purpose.
 
