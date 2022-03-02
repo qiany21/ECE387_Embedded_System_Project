@@ -100,13 +100,9 @@ lcdpcf8574
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This LCD library includes some functions to control and write to the LCD. Two additional methods that help users program the LCD have been added.
 
-1. void lcd_clear(int line)
+- void lcd_clear(int line) : This method clears a given line. There was only one method to clear the whole screen, and that is not helpful.
 
-| This method clears a given line. There was only one method to clear the whole screen, and that is not helpful.
-
-2. void lcd_puti(int i)
-
-| This method prints a given integer onto the LCD. There were methods to print char and string onto the LCD. This method helps when we want to print the loop control variable or something else that is an integer type.
+- void lcd_puti(int i) : This method prints a given integer onto the LCD. There were methods to print char and string onto the LCD. This method helps when we want to print the loop control variable or something else that is an integer type.
 
 | Important:
 |
