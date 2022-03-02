@@ -32,8 +32,10 @@ Now you are all set! To compile the sample program(I borrowed the python script 
     python ./compile_script.py 4 com3
 
 where the number 4 indicates the level of compilation(there are a total of 4 levels) and com3 indicates the port used by Arduino(This can be different in your case, make sure you have the correct port number and change both the command line arguments and the setting in the script).
+
+Note you might be using an I2C LCD with different size and/or other microcontrollers. Please refer to `Library`_ section and make relevant changes.
   
-Hardware Overview
+Hardware
 -----------------
 
 What is an I2C LCD?
@@ -72,7 +74,7 @@ The PCF8574 is an I2C bus to 8-bit parallel bus IO expander IC. The following bo
 
 .. image:: https://github.com/qiany21/ECE387_Midterm_Project/blob/main/pcf8574t.jpg
 
-Library Overview
+Library
 -----------------
 
 i2chw
