@@ -33,7 +33,7 @@ Now you are all set! To compile the sample program(I borrowed the python script 
 
 where the number 4 indicates the level of compilation(there are a total of 4 levels) and com3 indicates the port used by Arduino(This can be different in your case, make sure you have the correct port number and change both the command line arguments and the setting in the script).
 
-Note you might be using an I2C LCD with different size and/or other microcontrollers. Please refer to `Library`_ section and make relevant changes.
+**Note** you might be using an I2C LCD with different size and/or other microcontrollers. Please refer to `Library`_ section and make relevant changes.
   
 Hardware
 -----------------
@@ -91,7 +91,7 @@ pcf8574
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This PCF8574 library is implemented as a helper library to set the status of those pins that are connected to the LCD. Meanwhile, it will be used to initialize the I2C communication. I changed PCF8574_ADDRBASE to be 0x27 which corresponds to have A0, A1, A2 of PCF8574 set to high. This is the library that will be used in library lcdpcf8574. 
 
-| Important:
+| **Important:**
 |
 | If you have PCF8574T and HD44780 separated and you solder them together by yourself, it is most likely you can set the address of the device. In this case, change PCF8574_ADDRBASE in pcf8574.h to match the address you set.
 
@@ -104,11 +104,11 @@ This LCD library includes some functions to control and write to the LCD. Two ad
 
 - void lcd_puti(int i) : This method prints a given integer onto the LCD. There were methods to print char and string onto the LCD. This method helps when we want to print the loop control variable or something else that is an integer type.
 
-| Important:
+| **Important:**
 |
 | If you are using an LCD with diffrent size, please make changes to LCD_LINES, LCD_DISP_LENGTH, LCD_WRAP_LINES in lcdpcf8574.h so that those parameters match your LCD display.
 
-Note UART has nothing to do with the I2C LCD module, it is designed for debugging purpose.
+**Note** UART has nothing to do with the I2C LCD module, it is designed for debugging purpose.
 
 
 Sample Program and Circuit Diagram
