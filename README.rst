@@ -104,7 +104,7 @@ This LCD library includes some functions to control and write to the LCD. Two ad
 
 | **Note:**
 | If you are using an LCD with diffrent size, please make changes to LCD_LINES, LCD_DISP_LENGTH, LCD_WRAP_LINES in lcdpcf8574.h so that those parameters match your LCD display.
-
+|
 **Note:** UART has nothing to do with the I2C LCD module, it is designed for debugging purpose.
 
 
