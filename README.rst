@@ -39,7 +39,7 @@ Hardware Overview
 What is an I2C LCD?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-An I2C LCD is a LCD display screen with I2C interface. It can be used to display a range of sizes. There are usually two typical sizes: 16x02 and 20x04(16 characters on 2 lines or 20 characters on 4 lines). The reason we need such a LCD with I2C is a normal LCD would need over 10 wires to connect to an Arduino while an I2C LCD would only use 4 wires to connect to an Arduino. 2 data pins are used to control the LCD. Addding an I2C interface reduces complexity and difficulty. In addition, more port resources are saved. An I2C LCD is maade up with a PCF8574T port expander and a HD44780 LCD. We will have a brief review of these two components.
+An I2C LCD is an LCD display screen with an I2C interface. It can be used to display a range of sizes. There are usually two typical sizes: 16x02 and 20x04(16 characters on 2 lines or 20 characters on 4 lines). The reason we need such an LCD with I2C is a normal LCD would need over 10 wires to connect to an Arduino while an I2C LCD would only use 4 wires to connect to an Arduino. 2 data pins are used to control the LCD. Adding an I2C interface reduces complexity and difficulty. In addition, more port resources are saved. An I2C LCD is made up of a PCF8574T port expander and an HD44780 LCD. Usually, these two parts will be soldered together when you purchase one. We will have a brief review of these two components.
 
 HD44780 LCD
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -68,7 +68,7 @@ The HD44780 LCD is a dot-matrix liquid crystal display controller driving 2 line
 PCF8574T Port Expander
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The PCF8574 is an I2C bus to 8-bit parallel bus IO expander IC. The following board which is configured to be interfaced with 16×2 or 20×4 LCD Displays. The address pins are pulled HIGH(which simply means the address of the device is fixed to be 0x27. This is important!!!) and you do not have access to all the IO pins and the INT pin. The interface for this IC is I2C using SDA and SCL lines. For more information, please refer to https://www.electronicshub.org/interfacing-pcf8574-with-arduino/
+The PCF8574 is an I2C bus to 8-bit parallel bus IO expander IC. The following board which is configured to be interfaced with 16×2 or 20×4 LCD Displays. The address pins are pulled HIGH(which simply means the address of the device is fixed to be 0x27. This is important!!!) and you do not have access to all the IO pins and the INT pin. The interface for this IC is I2C using SDA and SCL lines. By I2C, The data is transmitted in the form of frame which is a bit sequence(The sequence is made up of start condition, address frame/data frame, and ACK message), and it is controlled by changing SDA and SCLK. For more information about PCF8574T, please refer to https://www.ti.com/lit/ds/symlink/pcf8574.pdf. For more information about I2C Communication Protocol, please refer to https://learn.sparkfun.com/tutorials/i2c/all
 
 .. image:: https://github.com/qiany21/ECE387_Midterm_Project/blob/main/pcf8574t.jpg
 
@@ -79,12 +79,18 @@ i2chw
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This I2C library is implemented as a compact assembler software implementation of the I2C protocol which runs on any AVR (i2cmaster.S) and as a TWI hardware interface for all AVR with built-in TWI hardware (twimaster.c). TWI is the name used by Atmel but is the same as I2C.
 
+Important:
 To make your program work with this I2C LCD library. You should know the microprocessor on your Arduino. For example, this library has been modified to work on Atmega328P. The F_CPU in twimaster.c has been changed to 16MHz in order to make it work. Please adjust this parameter in case of using other microprocessors.
 
 Another important parameter is SCL_CLOCK, adjust this to change the speed of displaying characters.
 
 pcf8574
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This PCF8574 library is implemented as a helper library to set the status of those pins that are connected to the LCD. Meanwhile, it will be used to initialize the I2C communication. This is the library that will be used in library lcdpcf8574.
+
+Important:
+if you have PCF8574T and HD44780 separated and you solder them together by yourself, it is most likely you can set the address of the device. In this case, change PCF8574_ADDRBASE in pcf8574.h to match the address you set.
+
 
 lcdpcf8574
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
