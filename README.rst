@@ -120,4 +120,4 @@ The sample program has two parts. The first part will display "Welcome to ECE387
 |
 Demo:
 
-.. youtube:: <4WkJ1fAOaGU>
+.. youtube:: 4WkJ1fAOaGU
