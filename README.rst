@@ -118,4 +118,6 @@ The sample program has two parts. The first part will display "Welcome to ECE387
 | **Note:**
 | For the sample program I provide, I connect my two buttons to pin 7 and pin 6( not pin 3 and pin 2 in the picture)
 |
+Demo:
 
+.. youtube:: <4WkJ1fAOaGU>
