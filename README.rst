@@ -121,5 +121,11 @@ The sample program has two parts. The first part will display "Welcome to ECE387
 Demo:
 
  https://youtube.com/embed/aycOPdJ-UaI
- 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=aycOPdJ-UaI)
+
+.. raw:: html
+
+    <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/MUQfKFzIOeU" 
+    frameborder="0"  
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
