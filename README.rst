@@ -111,6 +111,6 @@ This LCD library includes some functions to control and write to the LCD. Two ad
 Sample Program and Circuit Diagram
 ----------------------------------------
 
-The sample program has two parts. The first part will display "Welcome to ECE387" on the first line, "Midterm Project" on the second line, "20x04 I2C LCD" on the third line, and the "Yicheng Qian" which is my name on the fourth line sequentially. Then, all four lines will be displayed for 5 seconds. After that, the second part is what we did for ECE387 LCD lab will appear. The system has 2 buttons where button 1 resets the program and repeats part 1 and puts a menu of what button 1 and 2 do. Button 2 scrolls between 3 messages (first = my name, second = how many times button 2 has been pressed, three = the course name and my section). The schematic is as shwon below:
+The sample program has two parts. The first part will display "Welcome to ECE387" on the first line, "Midterm Project" on the second line, "20x04 I2C LCD" on the third line, and the "Yicheng Qian" which is my name on the fourth line sequentially. Then, all four lines will be displayed for 5 seconds. After that, the second part is what we did for ECE387 LCD lab. A menu with 2 options will show up. The system has 2 buttons. Button 1 restarts from part 1 and puts a menu of what button 1 and 2 do. Button 2 scrolls between 3 messages (first = my name, second = how many times button 2 has been pressed, three = the course name and my section). The schematic is as shwon below:
 
 
