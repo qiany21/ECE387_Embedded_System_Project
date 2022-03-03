@@ -124,5 +124,8 @@ https://youtube.com/embed/aycOPdJ-UaI
 
 .. raw:: html
 
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/aycOPdJ-UaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <div style="position: relative; padding-bottom: 56.25%; height: 5; overflow: hidden; max-width: 100%; height: auto;">
+      <iframe src="//www.youtube.com/embed/nNzeGittVXw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+   </div>
 
+Source: `www.youtube.com/embed/nNzeGittVXw <www.youtube.com/embed/nNzeGittVXw>`_
