@@ -120,5 +120,5 @@ The sample program has two parts. The first part will display "Welcome to ECE387
 |
 Demo:
 
-.. youtube:: https://youtube.com/embed/<aycOPdJ-UaI>
+ https://youtube.com/embed/aycOPdJ-UaI
 
